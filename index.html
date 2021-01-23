@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Coded by: Bruno G | https://github.com/brgrlad/ -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Intro component with sign-up form | Front End Mentor Solution</title>
+
+  <meta name="description" content="HTML, CSS and JavaScript code solution for form validation. Challenge by Frontend Mentor.">
+
+  <!-- font-family: 'Poppins', sans-serif; -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- icons -->
+  <script src="https://kit.fontawesome.com/d445d32ba0.js" crossorigin="anonymous"></script>
+
+  <!-- style sheet -->
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+  <div class="mainContainer">
+
+    <div class="leftContainer"> 
+
+      <div class="jumbo"> 
+        
+        <h1>Learn to code by watching others</h1> 
+
+        <p>See how experienced developers solve problems in real time. 
+
+        Watching scripeted tutorials is great, but understanding how developers think is invaluable.</p> 
+      
+      </div>    
+    
+      <!-- end left container -->
+    </div>
+
+
+
+    <div class="rightContainer">   
+
+     <div class="formWrapper"> 
+
+       <div class="purpleBox">
+         <p> <b> Try it free 7 days </b> then $20/mo. thereafter</p>
+       </div>
+        
+
+        <!-- form -->
+       <form>
+
+         <!-- success message to be shown when form is accepted -->
+        <div class="successMessage hideContent">
+
+          <p>Thank you for subscribing!</p>        
+          <p>Coded by Bruno G - https://github.com/brgrlad/ - for the FroentEnd Master's challenge</p>
+
+        </div>
+
+
+        <div class="inputWrapper">  
+
+          <!-- first name input field -->
+          <input class="inputMargin" type="text" placeholder="First Name " name="" id="">          
+
+          <div class="error hideContent">
+            <p>First Name cannot be empty</p>
+            
+            <i class="fas fa-exclamation-circle alert hideError"></i>
+          </div>
+
+
+          <!-- last name input field -->
+          <input class="inputMargin" type="text" placeholder="Last Name" name="" id="">
+
+          <div class="error  hideContent">
+            <p>Last name cannot be empty</p>
+
+            <i class="fas fa-exclamation-circle alert hideError"></i>
+          </div>
+
+
+          <!-- email address input field -->
+          <input class="inputMargin" type="text" placeholder="E-Mail Address" name="" id="">
+
+          <div class="error hideContent">
+            <p>Please, provide a valid e-mail address</p>
+
+            <i class="fas fa-exclamation-circle alert hideError"></i>
+          </div>
+
+
+          <!-- password input field -->
+          <input class="inputMargin" type="password" placeholder="Password" name="" id="">
+
+          <div class="error hideContent">
+            <p>Please, create a password</p>
+
+            <i class="fas fa-exclamation-circle alert hideError"></i>
+          </div>
+
+
+          <!-- button -->
+          <button>CLAIM YOUR FREE TRIAL</button>
+
+
+          <!-- disclaimer at the bottom of the page-->
+          <p class="disclaimer">Lorem ipsum dolor sit amet,  ipsum dolor <span class="disclaimerText">  adipisicing elit</span>.</p>
+         
+
+
+          <!-- end inputWrapper -->
+        </div>   
+         
+       </form>
+      
+
+       <!-- end formWrapper -->
+      </div>
+
+    
+     <!-- end right container -->
+    </div>
+
+
+    <!--end main container  -->
+  </div>
+
+
+  <!-- form validation script -->
+  <script src="form.js"></script>
+  
+</body>
+</html>
