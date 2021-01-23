@@ -1,0 +1,247 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    background-image: url(images/bg-intro-desktop.png);
+    background-color: rgba(255, 122, 122);       
+}
+
+.mainContainer{
+    display: flex;
+    justify-content: space-around;    
+    align-items: center;
+
+    /* bellow, properties are making the main container expand to 100% the screen size */
+    position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;    
+}
+
+.leftContainer,.rightContainer {    
+    width: 100%;
+    margin-left: none;
+    margin-right: none;  
+    display: flex;   
+    justify-content: space-around;      
+}
+
+/* Main conent on the left: H1 and text */
+.jumbo{    
+    color: white;
+    margin-left: 20%;
+    width: 65%;
+    font-size: 25px;
+    font-weight: 100;      
+}
+
+.jumbo p{
+    font-size: 16px;
+    font-weight: 100;    
+}
+
+
+h1{
+    margin: 0;
+    line-height: 55px;
+    font-weight: 600;
+}
+
+.formWrapper{
+    margin-right: 20%;
+    width: 65%;  
+}
+
+.purpleBox{
+    background-color:hsl(248, 32%, 49%);
+    color: white;
+    box-shadow: -1px 5px rgba(0, 0, 0, 0.233);
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    text-align: center;    
+    margin-bottom: 5%;    
+    
+}
+
+form, input{
+    background-color: white;      
+}
+
+
+form{    
+    background-color: rgb(255, 255, 255);
+    box-shadow: -1px 5px rgba(0, 0, 0, 0.158);
+    border-radius: 10px;
+    
+    /* paddin is being added otherwise first input field won't respect form's size */
+    padding-top: 30px;
+    padding-bottom: 30px;    
+    min-height: 410px;
+}
+
+
+input{
+    width: 85%;
+    /* border: rgba(255, 122, 122) solid 2px; */
+    border: rgba(182, 182, 182, 0.5) solid 1px;
+    height: 50px;
+    border-radius: 8px;
+    display: flex;
+    margin: auto auto;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    font-weight: 600;   
+    color: rgb(0, 0, 0);
+    position: static;    
+}
+
+
+input:focus{
+    border: hsl(249, 10%, 26%) 1.5px solid;
+    border-radius: 8px;
+    outline: none;        
+}
+
+
+::placeholder{
+    color: rgba(92, 91, 91, 0.432);  
+    font-weight: 500;  
+    font-family: 'Poppins', sans-serif; 
+}
+
+
+form input[type="text"] {
+    box-sizing: border-box;
+    padding-left: 30px;   
+}
+
+
+form input[type="password"] {
+    box-sizing: border-box;
+    padding-left: 30px;   
+}
+
+
+button{
+    width: 86%;
+    height: 50px;
+    border: none;
+    color: white;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    background-color: hsl(154, 59%, 51%);    
+    border-radius: 8px;
+    display: flex;
+    margin: auto; 
+    margin-top: 20px;  
+    justify-content: center;
+
+    /* line height is centering text vertically */
+    line-height: 50px;
+    cursor: pointer; 
+}
+
+button:hover{
+    background-color:  hsla(154, 59%, 51%, 0.877); 
+}
+
+
+.error{
+    color: rgba(255, 122, 122);
+    width: 83%;
+    margin: auto;     
+    margin-top: -20px;
+    font-size: 10px;
+    text-align: right;
+    box-sizing: content-box;
+    padding: 0;
+    font-style: italic;   
+}
+
+
+/* alert icon */
+.alert{
+    position: absolute;
+    margin-top: -65px;
+    margin-left: -30px;
+    font-size: 20px;
+}
+
+
+/* errorBorder to be added with JS */
+.errorBorder{
+    border: rgba(255, 122, 122, 0.76) 2.5px solid;
+    color: rgba(255, 122, 122, 0.76)
+}
+
+
+/* hide error to be removed with JS */
+.hideContent{
+    display: none;    
+}
+
+.successMessage{  
+    border: 1px red solid;       
+}
+
+.disclaimer{
+    font-size: 11px;
+    text-align: center;
+    color: rgb(167, 167, 167);
+}
+
+.disclaimerText{
+    font-weight: bold;
+    color: rgba(255, 122, 122, 0.76)
+}
+
+
+
+
+/* ------------- mobile version --------------- */
+@media only screen and (max-width: 600px) {
+    .mainContainer{
+        display: block;
+    }
+
+    .purpleBox{
+        height: fit-content;
+    }
+
+    .purpleBox p{
+        padding-left: 80px;
+        padding-right: 80px;        
+    }
+
+    .leftContainer,.rightContainer {        
+        width: 100%;       
+    }
+
+    .jumbo, .formWrapper{
+        margin: 0;
+        width: 90%;
+        text-align: center;
+        padding-bottom: 30px;       
+    }
+
+    .jumbo{
+        font-size: 14px;
+    }
+
+    h1{
+        line-height: normal;
+        padding-top: 20px;
+    }
+
+    .jumbo p{
+        font-size: 18px;
+        font-weight: 100;       
+    }
+
+}
