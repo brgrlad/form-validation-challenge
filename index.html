@@ -7,7 +7,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Intro component with sign-up form | Front End Mentor Solution</title>
+  <title>Intro component with sign-up form | FrontEnd Mentor | Solution</title>
 
   <meta name="description" content="HTML, CSS and JavaScript code solution for form validation. Challenge by Frontend Mentor.">
 
@@ -35,7 +35,7 @@
 
         <p>See how experienced developers solve problems in real time. 
 
-        Watching scripeted tutorials is great, but understanding how developers think is invaluable.</p> 
+        Watching scripted tutorials is great, but understanding how developers think is invaluable.</p> 
       
       </div>    
     
@@ -58,19 +58,16 @@
 
          <!-- success message to be shown when form is accepted -->
         <div class="successMessage hideContent">
-
-          <p>Thank you for subscribing!</p>        
-          <p>Coded by Bruno G - https://github.com/brgrlad/ - for the FroentEnd Master's challenge</p>
-
+          <p><b>Thank you</b> for subscribing!</p> 
         </div>
 
 
         <div class="inputWrapper">  
 
           <!-- first name input field -->
-          <input class="inputMargin" type="text" placeholder="First Name " name="" id="">          
+          <input class="inputMargin" type="text" placeholder="First Name " name="" id="firstName">          
 
-          <div class="error hideContent">
+          <div class="firstNameError error hideContent" id="firstNameErrorID">
             <p>First Name cannot be empty</p>
             
             <i class="fas fa-exclamation-circle alert hideError"></i>
@@ -78,19 +75,22 @@
 
 
           <!-- last name input field -->
-          <input class="inputMargin" type="text" placeholder="Last Name" name="" id="">
+          <input class="inputMargin" type="text" placeholder="Last Name" name="" id="lastName">
 
-          <div class="error  hideContent">
+          <div class="lastNameError error hideContent" id="lastNameErrorID">
             <p>Last name cannot be empty</p>
 
-            <i class="fas fa-exclamation-circle alert hideError"></i>
+            <i class="fas fa-exclamation-circle alert hideError"></i>          
+
           </div>
 
 
-          <!-- email address input field -->
-          <input class="inputMargin" type="text" placeholder="E-Mail Address" name="" id="">
 
-          <div class="error hideContent">
+
+          <!-- email address input field -->
+          <input class="inputMargin" type="text" placeholder="E-Mail Address" name="" id="email">
+
+          <div class="emailError error hideContent" id="emaildErrorID">
             <p>Please, provide a valid e-mail address</p>
 
             <i class="fas fa-exclamation-circle alert hideError"></i>
@@ -98,9 +98,9 @@
 
 
           <!-- password input field -->
-          <input class="inputMargin" type="password" placeholder="Password" name="" id="">
+          <input class="inputMargin" type="password" placeholder="Password" name="" id="password">
 
-          <div class="error hideContent">
+          <div class="passwordError error hideContent" id="passwordErrorID">
             <p>Please, create a password</p>
 
             <i class="fas fa-exclamation-circle alert hideError"></i>

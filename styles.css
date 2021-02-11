@@ -102,7 +102,7 @@ input{
 
 
 input:focus{
-    border: hsl(249, 10%, 26%) 1.5px solid;
+    border: hsl(249, 10%, 26%) 1.5px solid;    
     border-radius: 8px;
     outline: none;        
 }
@@ -174,10 +174,18 @@ button:hover{
 }
 
 
+
+
 /* errorBorder to be added with JS */
 .errorBorder{
-    border: rgba(255, 122, 122, 0.76) 2.5px solid;
-    color: rgba(255, 122, 122, 0.76)
+    border: rgba(255, 122, 122, 0.76) 2px solid;
+    
+}
+
+.successBorder{
+    border: rgb(0, 179, 0) 2px solid;
+    
+
 }
 
 
@@ -187,7 +195,21 @@ button:hover{
 }
 
 .successMessage{  
-    border: 1px red solid;       
+    font-size: 20px;  
+    text-align: center;
+    margin-top: 180px;
+    color: rgb(255, 122, 122);
+    
+    
+    
+    
+}
+
+.successMessage .p{
+    margin: 0;   
+    
+    
+    
 }
 
 .disclaimer{
@@ -243,5 +265,7 @@ button:hover{
         font-size: 18px;
         font-weight: 100;       
     }
+
+    
 
 }
